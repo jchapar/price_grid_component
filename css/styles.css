@@ -24,12 +24,42 @@ a {
   max-width: 375px;
   margin: 2rem auto 0 auto;
 }
+
+.grid {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 /* Section 1 */
 .section-1 {
   background: #fff;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   padding: 1.5rem;
+}
+
+.section-1-content {
+  /* max-width: 90%; */
+}
+
+.section-1-content h3 {
+  color: var(--cyan-color);
+  mix-blend-mode: darken;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-1-content h4 {
+  color: var(--bright-yellow);
+  mix-blend-mode: darken;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.section-1-content p {
+  color: var(--grayish-blue);
+  mix-blend-mode: darken;
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
 /* Section 2 */
