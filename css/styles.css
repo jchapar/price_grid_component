@@ -22,7 +22,11 @@ a {
 
 .container {
   max-width: 375px;
+  height: 100vh;
   margin: 2rem auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid {
@@ -34,6 +38,7 @@ a {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   padding: 1.5rem;
+  grid-area: sec1;
 }
 
 .section-1-content {
@@ -66,6 +71,8 @@ a {
 .section-2 {
   background: #00b2b2;
   padding: 1.5rem;
+  border-bottom-left-radius: 5px;
+  grid-area: sec2;
 }
 
 .section-2 h3 {
@@ -99,7 +106,8 @@ a {
 }
 
 .section-2 .btn {
-  display: block;
+  display: inline-block;
+  width: 100%;
   background: var(--bright-yellow);
   color: #fff;
   text-align: center;
@@ -113,7 +121,45 @@ a {
 /* Section 3 */
 .section-3 {
   background: #00cccc;
-  border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 1.5rem;
+  grid-area: sec3;
+}
+
+.section-3 h3 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.section-3 p {
+  color: var(--light-gray);
+  line-height: 1.5;
+  max-width: 70%;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    max-width: 700px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "sec1 sec1 "
+      "sec2 sec3";
+  }
+
+  .section-1,
+  .section-2,
+  .section-3 {
+    height: 100%;
+  }
+
+  .section-3 p {
+    color: var(--light-gray);
+    line-height: 1.5;
+    max-width: 80%;
+  }
 }
