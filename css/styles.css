@@ -71,7 +71,6 @@ a {
 .section-2 {
   background: #00b2b2;
   padding: 1.5rem;
-  border-bottom-left-radius: 5px;
   grid-area: sec2;
 }
 
@@ -121,9 +120,10 @@ a {
 /* Section 3 */
 .section-3 {
   background: #00cccc;
-  border-bottom-right-radius: 5px;
   padding: 1.5rem;
   grid-area: sec3;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .section-3 h3 {
@@ -155,6 +155,14 @@ a {
   .section-2,
   .section-3 {
     height: 100%;
+  }
+
+  .section-2 {
+    border-bottom-left-radius: 5px;
+  }
+
+  .section-3 {
+    border-bottom-right-radius: 5px;
   }
 
   .section-1-content p {
