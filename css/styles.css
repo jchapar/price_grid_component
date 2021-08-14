@@ -157,6 +157,10 @@ a {
     height: 100%;
   }
 
+  .section-1-content p {
+    max-width: 90%;
+  }
+
   .section-3 p {
     color: var(--light-gray);
     line-height: 1.5;
